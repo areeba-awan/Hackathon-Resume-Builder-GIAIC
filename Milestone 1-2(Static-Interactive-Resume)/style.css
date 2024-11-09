@@ -1,0 +1,149 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.resume-container {
+    display: flex;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Left Section Styling */
+
+.left-section {
+    background-color:rgb(46, 39, 81);
+    color: white;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-right: 5px solid #e68439;
+    margin-bottom: 20px; /* For spacing in mobile view */
+}
+
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 5px solid #ba3e6b;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #9039ed;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+ul {
+    list-style-type: fill round;
+    padding: 10;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Right Section Styling */
+.right-section {
+    padding: 20px;
+    width: 65%;
+    margin-bottom: 20px; /* For spacing in mobile view */
+    background-color:rgb(197, 224, 247);
+}
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #ff737c;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet and below (768px or smaller screens) */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction:column;
+        align-items: center;
+    }
+
+    .left-section, .right-section {
+        width: 90%; /* Ensure both sections take up most of the screen */
+        margin-bottom: 10px;
+    }
+
+    .profile-picture {
+        width: 50%; /* Adjust profile picture size for smaller screens */
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1.2em;
+    }
+}
+
+/* Very small screens (480px or smaller) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .profile-picture {
+        width: 60%; /* Adjust further for very small screens */
+    }
+
+    ul li {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 1.1em;
+    }
+}
+
